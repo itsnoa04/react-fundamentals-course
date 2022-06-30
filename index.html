@@ -8,10 +8,12 @@
   </head>
   <body>
     <script>
-      // use this script tag to generate a root div.
-      // create a div element in the script tag and append it to the root div.
-      // give the div element a class name of 'container'
-      // you can create elements by `document.createElement('div')`
+      const root = document.createElement("div");
+      root.setAttribute("id", "root");
+      document.body.append(root);
+      const element = document.createElement("div");
+      element.className = "container";
+      root.append(element);
     </script>
   </body>
 </html>
